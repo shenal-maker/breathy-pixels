@@ -64,7 +64,7 @@ function setMode(m) {
 
 function showFact() {
   const el = document.getElementById('fact');
-  el.textContent = MODES[mode].fact;
+  el.textContent = 'Fun fact: ' + MODES[mode].fact;
   el.style.opacity = 1;
   setTimeout(() => el.style.opacity = 0, 7000);
 }
