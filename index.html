@@ -12,8 +12,8 @@
   .tab.active { background: rgba(255,255,255,0.4); font-weight: 700; }
   .canvas { border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; align-items: center; padding: 14px; gap: 8px; position: relative; min-height: 220px; justify-content: center; }
   .sprite { image-rendering: pixelated; background-repeat: no-repeat; }
-  .phase { font-size: 16px; font-weight: 700; color: #fff; text-shadow: 0 1px 4px rgba(0,0,0,0.4); letter-spacing: 1px; min-height: 22px; }
-  .fact { font-size: 11px; font-weight: 700; color: #ffe066; text-align: center; padding: 0 8px; transition: opacity 1s; position: absolute; bottom: 10px; left: 8px; right: 8px; letter-spacing: 0.3px; text-shadow: 0 1px 6px rgba(0,0,0,0.5); }
+  .phase { font-size: 16px; font-weight: 700; color: #fff; letter-spacing: 1px; min-height: 22px; -webkit-text-stroke: 1px black; paint-order: stroke fill; }
+  .fact { font-size: 11px; font-weight: 700; color: #ffe066; text-align: center; padding: 0 8px; transition: opacity 1s; position: absolute; top: 10px; left: 8px; right: 8px; letter-spacing: 0.3px; -webkit-text-stroke: 1px black; paint-order: stroke fill; }
 </style>
 </head>
 <body>
@@ -26,7 +26,7 @@
   <div class="canvas" id="canvas">
     <div class="sprite" id="sprite"></div>
     <div class="phase" id="phase"></div>
-    <div id="count" style="font-size:22px;font-weight:700;color:rgba(255,255,255,0.7);min-height:28px;"></div>
+    <div id="count" style="font-size:22px;font-weight:700;color:rgba(255,255,255,0.9);min-height:28px;-webkit-text-stroke:1px black;paint-order:stroke fill;"></div>
     <div class="fact" id="fact"></div>
   </div>
 </div>
